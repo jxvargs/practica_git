@@ -1,0 +1,66 @@
+practica_git $ cp cmds_basicos.txt.orig cmds_basicos.txt
+practica_git $ git add cmds_basicos.txt
+practica_git $ git commit -m "practicando git"
+[master (root-commit) 55420fa] practicando git
+ 1 file changed, 11 insertions(+)
+ create mode 100644 cmds_basicos.txt
+practica_git[master ?] $ git reset --soft
+practica_git[master ?] $ ls
+cmds_basicos.txt  cmds_basicos.txt.orig
+practica_git[master ?] $ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	cmds_basicos.txt.orig
+
+nothing added to commit but untracked files present (use "git add" to track)
+practica_git[master ?] $ git reset --mixed
+practica_git[master ?] $ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	cmds_basicos.txt.orig
+
+nothing added to commit but untracked files present (use "git add" to track)
+practica_git[master ?] $ git reset --hard
+HEAD is now at 55420fa practicando git
+practica_git[master ?] $ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	cmds_basicos.txt.orig
+
+nothing added to commit but untracked files present (use "git add" to track)
+practica_git[master ?] $ ls
+cmds_basicos.txt  cmds_basicos.txt.orig
+practica_git[master ?] $ git add cmds_basicos.txt
+practica_git[master ?] $ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	cmds_basicos.txt.orig
+
+nothing added to commit but untracked files present (use "git add" to track)
+practica_git[master ?] $ ls
+cmds_basicos.txt  cmds_basicos.txt.orig
+practica_git[master ?] $ cat cmds_basicos.txt
+  echo "mkdir -p Platzi"
+  echo "-p => parent directory"
+  man mkdir
+  mkdir -p Platzi
+  ls -al Platzi/
+  touch practica Platzi/
+  echo "touch => creara un archivo vacio dentro de la carpeta Platzi"
+  echo "rm -rf Platzi/ borrara el directorio Platzi"
+  echo "de manera recursiva y forzando su borrado"
+  rm -rf Platzi/
+  ls -al Platzi
+practica_git[master ?] $ git status log
+On branch master
+nothing to commit, working tree clean
+practica_git[master ?] $ git log
+commit 55420fadb8023d022cab448a0c191e22e9e94a5d (HEAD -> master)
+Author: yo <mymail@gmail.com>
+Date:   Wed Sep 9 20:06:38 2020 -0700
+
+    practicando git
