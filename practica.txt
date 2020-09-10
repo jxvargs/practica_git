@@ -1,0 +1,88 @@
+practica_git[master] $ git status
+On branch master
+nothing to commit, working tree clean
+practica_git[master] $ git log -3
+commit 4b5300f5f2bf28c6aef7d37b1b3db219718eac97 (HEAD -> master)
+Author: JulianV <jjulianvargas@gmail.com>
+Date:   Thu Sep 10 11:54:09 2020 -0700
+
+    primeros comandos...
+
+commit 55420fadb8023d022cab448a0c191e22e9e94a5d
+Author: JulianV <jjulianvargas@gmail.com>
+Date:   Wed Sep 9 20:06:38 2020 -0700
+
+    practicando git
+practica_git[master] $ git log
+commit 4b5300f5f2bf28c6aef7d37b1b3db219718eac97 (HEAD -> master)
+Author: JulianV <jjulianvargas@gmail.com>
+Date:   Thu Sep 10 11:54:09 2020 -0700
+
+    primeros comandos...
+
+commit 55420fadb8023d022cab448a0c191e22e9e94a5d
+Author: JulianV <jjulianvargas@gmail.com>
+Date:   Wed Sep 9 20:06:38 2020 -0700
+
+    practicando git
+practica_git[master] $
+practica_git[master] $ ls
+ciclos_de_git.txt  practica_1.png  practica_3.png
+cmds_basicos.txt   practica_2.png
+practica_git[master] $ git log practica_1.png
+commit 4b5300f5f2bf28c6aef7d37b1b3db219718eac97 (HEAD -> master)
+Author: JulianV <jjulianvargas@gmail.com>
+Date:   Thu Sep 10 11:54:09 2020 -0700
+
+    primeros comandos...
+practica_git[master] $ git log practica_2.png
+commit 4b5300f5f2bf28c6aef7d37b1b3db219718eac97 (HEAD -> master)
+Author: JulianV <jjulianvargas@gmail.com>
+Date:   Thu Sep 10 11:54:09 2020 -0700
+
+    primeros comandos...
+practica_git[master] $ git rm --cached
+fatal: No pathspec was given. Which files should I remove?
+practica_git[master] $ git rm --cached .
+fatal: not removing '.' recursively without -r
+practica_git[master] $ git rm -r --cached .
+rm 'ciclos_de_git.txt'
+rm 'cmds_basicos.txt'
+rm 'practica_1.png'
+rm 'practica_2.png'
+rm 'practica_3.png'
+practica_git[master x?] $ ls
+ciclos_de_git.txt  practica_1.png  practica_3.png
+cmds_basicos.txt   practica_2.png
+practica_git[master x?] $ git add .
+practica_git[master] $ ls
+ciclos_de_git.txt  practica_1.png  practica_3.png
+cmds_basicos.txt   practica_2.png
+practica_git[master] $ git rm -r --force .
+rm 'ciclos_de_git.txt'
+rm 'cmds_basicos.txt'
+rm 'practica_1.png'
+rm 'practica_2.png'
+rm 'practica_3.png'
+practica_git[master x] $ ls
+practica_git[master x] $ git log
+commit 4b5300f5f2bf28c6aef7d37b1b3db219718eac97 (HEAD -> master)
+Author: JulianV <jjulianvargas@gmail.com>
+Date:   Thu Sep 10 11:54:09 2020 -0700
+
+    primeros comandos...
+
+commit 55420fadb8023d022cab448a0c191e22e9e94a5d
+Author: JulianV <jjulianvargas@gmail.com>
+Date:   Wed Sep 9 20:06:38 2020 -0700
+
+    practicando git
+practica_git[master x] $ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    ciclos_de_git.txt
+	deleted:    cmds_basicos.txt
+	deleted:    practica_1.png
+	deleted:    practica_2.png
+	deleted:    practica_3.png
