@@ -86,3 +86,18 @@ Changes to be committed:
 	deleted:    practica_1.png
 	deleted:    practica_2.png
 	deleted:    practica_3.png
+
+
+practica_git[master x?] $ git add practica.txt
+practica_git[master x+] $ git commit -m "nuevo archivo..."
+[master 5f97727] nuevo archivo...
+ 6 files changed, 88 insertions(+), 77 deletions(-)
+ delete mode 100644 ciclos_de_git.txt
+ delete mode 100644 cmds_basicos.txt
+ create mode 100644 practica.txt
+ delete mode 100644 practica_1.png
+ delete mode 100644 practica_2.png
+ delete mode 100644 practica_3.png
+practica_git[master] $ ls
+practica.txt
+
