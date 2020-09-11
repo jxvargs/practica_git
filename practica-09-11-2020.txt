@@ -1,0 +1,47 @@
+practica_git[cabecera] $ ls
+blogpost.html  practica.txt
+practica_git[cabecera] $ vim blogpost.html
+practica_git[cabecera !] $ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	blogpost.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+practica_git[cabecera !] $ git commit -am "agregue un </p> tag..."
+[cabecera eefbd7b] agregue un </p> tag...
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+practica_git[cabecera] $ git checkout master
+Switched to branch 'master'
+practica_git[master] $ vim blogpost.html
+practica_git[master !] $ vim blogpost.html
+practica_git[master !] $ vim blogpost.html
+practica_git[master !] $ git commit -am "conflicto linea 11..."
+[master dd2413e] conflicto linea 11...
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+practica_git[master] $ git checkout cabecera
+Switched to branch 'cabecera'
+practica_git[cabecera] $ vim blogpost.html
+practica_git[cabecera] $ git checkout master
+Switched to branch 'master'
+practica_git[master] $ git merge cabecera
+Auto-merging blogpost.html
+CONFLICT (content): Merge conflict in blogpost.html
+Automatic merge failed; fix conflicts and then commit the result.
+practica_git[master !] $ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   blogpost.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+practica_git[master !] $ git commit -a blogpost.html
+fatal: paths 'blogpost.html ...' with -a does not make sense
+practica_git[master !] $ git add blogpost.html
+practica_git[master !] $ git commit -am "conflicto linea 11..."
+[master d5225c3] conflicto linea 11...
+practica_git[master] $ git merge cabecera
+Already up to date.
+practica_git[master] $
