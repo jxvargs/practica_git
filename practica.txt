@@ -101,3 +101,11 @@ practica_git[master x+] $ git commit -m "nuevo archivo..."
 practica_git[master] $ ls
 practica.txt
 
+
+- Ultimos comandos de git practicados...
+
+git branch
+git show
+git log --stat
+git checkout <numbre de la rama>
+git checkout master  ==> para regresar a la branch master.
