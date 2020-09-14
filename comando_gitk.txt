@@ -1,0 +1,15 @@
+Comando gitk
+============
+
+
+practica_git[master ?] $ gitk
+
+Command 'gitk' not found, but can be installed with:
+
+sudo apt install gitk
+
+practica_git[master ?] $ sudo apt install -y gitk
+
+
+
+ver archivo gtk_demo.png
