@@ -1,0 +1,27 @@
+[cabecera] $ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+practica_git[master] $ git branch header
+[master] $ git branch footer
+[master] $ git branch
+  cabecera
+  footer
+  header
+* master
+[master] $ git push origin header
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'header' on GitHub by visiting:
+remote:      {url}
+remote:
+To github.com:usuario/repo
+ * [new branch]      header -> header
+practica_git[master] $ git push origin footer
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'footer' on GitHub by visiting:
+remote:     {url}
+remote:
+To github.com:usuario/repo
+ * [new branch]      footer -> footer
+practica_git[master] $
