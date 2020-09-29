@@ -13,3 +13,5 @@ practica_git[master ?] $ sudo apt install -y gitk
 
 
 ver archivo gtk_demo.png
+
+Hola, aqui empieza un nuevo usuario.
