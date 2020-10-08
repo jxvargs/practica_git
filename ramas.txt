@@ -19,4 +19,8 @@ Este linea es solo un cambio para practicar git rebase. #2
 Experimento 1
 
 Este linea es solo un cambio para practicar git rebase.
+<<<<<<< HEAD
 >>>>>>> 4aca3be... Exp 1...
+=======
+Experimento 2
+>>>>>>> d8e44de... Exp 2...
