@@ -10,7 +10,13 @@ $ git show-branch
 
 Este comando muestra las ramas y cual ha sido su historia...
 
+<<<<<<< HEAD
 Este linea es solo un cambio para practicar git rebase. #1
 
 Este linea es solo un cambio para practicar git rebase. #2
 
+=======
+Experimento 1
+
+Este linea es solo un cambio para practicar git rebase.
+>>>>>>> 4aca3be... Exp 1...
