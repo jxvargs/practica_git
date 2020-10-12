@@ -1,0 +1,1 @@
+Aveces hacemos un commit pero resulta que no queriamos mandarlo porque faltaba algo mas. git commit -amend hara que los cambios que se hicieron los agregara al commit anterior.
